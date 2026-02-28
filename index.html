@@ -4,68 +4,93 @@
     <meta charset="UTF-8">
     <title>Dhananjay Chougule | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- Header -->
+<header>
+    <h1>Dhananjay Chougule</h1>
     <nav>
-        <div class="logo">Dhananjay Chougule</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
+</header>
 
-    <header class="hero">
-        <div class="hero-content">
-            <img src="profile.jpg" alt="Dhananjay" class="profile-pic">
-            <h1>Hi, I'm Dhananjay 👋</h1>
-            <p>Full Stack Developer | MERN Stack Enthusiast</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
+<!-- Hero Section -->
+<section class="hero">
+    <img src="profile.jpg" alt="Profile Photo">
+    <h2>Hello, I'm Dhananjay 👋</h2>
+    <p>Full Stack Developer | Web Application Developer | Problem Solver</p>
 
-    <section id="about">
-        <h2>About Me</h2>
+    <div class="buttons">
+        <a href="resume.pdf" class="btn primary" target="_blank">Download Resume</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Full Stack Developer who enjoys building clean,
+        responsive, and user-friendly web applications.
+        I love solving real-world problems through code and continuously
+        improving my technical skills.
+        I am currently seeking internship and entry-level opportunities.
+    </p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>SalesSavvy</h3>
         <p>
-            I am a passionate fresher developer specializing in MERN stack.
-            I enjoy building scalable web applications and continuously learning new technologies.
+            A full-stack sales tracking application with authentication,
+            dashboard analytics, and CRUD operations.
         </p>
-    </section>
+        <a href="https://github.com/Dhananjay20000/SalesSavvyFrontEnd" target="_blank">View Project</a>
+    </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <div class="project-card">
+        <h3>TaskBuddy</h3>
+        <p>
+            A task management application that allows users to create,
+            update, delete, and manage tasks efficiently.
+        </p>
+        <a href="https://github.com/Dhananjay20000/Taskbuddy" target="_blank">View Project</a>
+    </div>
 
-        <div class="project-container">
+</section>
 
-            <div class="project-card">
-                <h3>SalesSavvy</h3>
-                <p>Full Stack Sales Management Application built using MERN stack.</p>
-                <a href="https://github.com/Dhananjay20000/SalesSavvyFrontEnd" target="_blank">View Project</a>
-            </div>
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: dhananajay@example.com</p>
 
-            <div class="project-card">
-                <h3>TaskBuddy</h3>
-                <p>Task Management System with CRUD operations and authentication.</p>
-                <a href="https://github.com/Dhananjay20000/Taskbuddy" target="_blank">View Project</a>
-            </div>
+    <div class="social-icons">
+        <a href="https://github.com/Dhananjay20000" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</section>
 
-            <div class="project-card">
-                <h3>Item API</h3>
-                <p>REST API built using Node.js, Express and MongoDB.</p>
-                <a href="https://github.com/Dhananjay20000/item-api" target="_blank">View Project</a>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: https://github.com/Dhananjay20000</p>
-    </section>
+<footer>
+    <p>© 2026 Dhananjay Chougule. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
