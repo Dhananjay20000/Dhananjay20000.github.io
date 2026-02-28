@@ -194,8 +194,32 @@ footer {
     }
 
     nav a {
-        margin: 0 10px;
-    }
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
 
     .hero h2 {
         font-size: 22px;
@@ -264,4 +288,5 @@ nav.active {
         position: relative;
     }
 }
+
 
