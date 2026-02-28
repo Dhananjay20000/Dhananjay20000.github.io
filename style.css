@@ -21,10 +21,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: #1e293b;
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header h1 {
@@ -79,14 +82,15 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.primary {
-    background: #38bdf8;
-    color: #000;
+.primary:hover {
+    background: #0ea5e9;
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
 }
 
-.secondary {
-    border: 1px solid #38bdf8;
-    color: #38bdf8;
+.secondary:hover {
+    background: #38bdf8;
+    color: #000;
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
 }
 
 .primary:hover {
@@ -195,4 +199,5 @@ footer {
         font-size: 22px;
     }
 }
+
 
