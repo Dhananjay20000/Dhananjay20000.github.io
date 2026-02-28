@@ -2,73 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Dhananjay Chougule | Full Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dhananjay Chougule | Full Stack Developer</title>
-
-    <meta name="description" content="Dhananjay Chougule - Full Stack Developer portfolio. View my projects and resume.">
-    <meta name="keywords" content="Dhananjay Chougule, Full Stack Developer, Portfolio">
+    <meta name="description" content="Dhananjay Chougule - Full Stack Developer Portfolio">
     <meta name="author" content="Dhananjay Chougule">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Dhananjay Chougule | Full Stack Developer">
-    <meta property="og:description" content="Explore my portfolio and development projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dhananjay20000.github.io">
-
-    <!-- Favicon -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- HEADER -->
+    <header>
+        <h1>Dhananjay</h1>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav id="nav">
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
     <!-- HERO SECTION -->
     <section class="hero">
-        <div class="hero-container">
+        <!-- 👇 THIS IMAGE WAS MISSING -->
+        <img src="profile.jpg" alt="Dhananjay Profile">
 
-            <div class="hero-text">
-                <h1>Hi, I'm Dhananjay</h1>
-                <h2>Full Stack Developer</h2>
-                <p>I build clean and responsive web applications with modern technologies.</p>
+        <h2>Hi, I'm Dhananjay</h2>
+        <p>Full Stack Developer passionate about building responsive and modern web applications.</p>
 
-                <div class="buttons">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="resume.pdf" download class="btn secondary">Download Resume</a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <img src="profile.jpg" alt="Dhananjay Profile">
-            </div>
-
+        <div class="buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="resume.pdf" download class="btn secondary">Download Resume</a>
         </div>
     </section>
 
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects">
+    <!-- PROJECTS -->
+    <section id="projects">
         <h2>My Projects</h2>
 
-        <div class="project-grid">
+        <div class="project-card">
+            <h3>SalesSavvy</h3>
+            <p>Sales management web application with analytics and tracking features.</p>
+        </div>
 
-            <div class="project-card">
-                <h3>SalesSavvy</h3>
-                <p>Sales management web application with tracking and analytics features.</p>
-            </div>
+        <div class="project-card">
+            <h3>TaskBuddy</h3>
+            <p>Task management application for organizing daily tasks efficiently.</p>
+        </div>
 
-            <div class="project-card">
-                <h3>TaskBuddy</h3>
-                <p>Task management application to organize daily tasks efficiently.</p>
-            </div>
+        <div class="project-card">
+            <h3>Item API</h3>
+            <p>REST API implementing CRUD operations for item management.</p>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <h3>Item API</h3>
-                <p>REST API project implementing CRUD operations for item management.</p>
-            </div>
 
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-icons">
+            <a href="https://github.com/Dhananjay20000" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
         </div>
     </section>
 
@@ -77,6 +81,14 @@
     <footer>
         <p>© 2026 Dhananjay Chougule. All Rights Reserved.</p>
     </footer>
+
+
+    <!-- SCRIPT FOR HAMBURGER -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav").classList.toggle("active");
+        }
+    </script>
 
 </body>
 </html>
