@@ -1,73 +1,36 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding: 15px 50px;
-}
-
-nav .logo {
+.hero {
+    background: linear-gradient(to right, #141e30, #243b55);
     color: white;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
-section {
-    padding: 40px 80px;
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-h2 {
-    color: #333;
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-ul {
-    padding-left: 20px;
-}
-
-.project-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card a {
+.btn {
     display: inline-block;
-    margin-top: 10px;
-    color: #3366cc;
+    padding: 10px 20px;
+    background: #3366cc;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s ease;
 }
+
+.btn:hover {
+    background: #254a99;
+}
+
+.secondary {
+    background: #555;
+}
+
