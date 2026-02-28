@@ -135,6 +135,8 @@ section h2 {
     max-width: 350px;
     border-radius: 16px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
 }
 
 .project-card:hover {
@@ -215,3 +217,4 @@ footer {
 section {
     animation: fadeUp 1s ease forwards;
 }
+
