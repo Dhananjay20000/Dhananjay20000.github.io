@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px 50px;
+}
+
+nav .logo {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+section {
+    padding: 40px 80px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
