@@ -133,3 +133,8 @@ h2 {
         font-size: 28px;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
