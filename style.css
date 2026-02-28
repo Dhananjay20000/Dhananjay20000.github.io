@@ -43,7 +43,7 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -109,7 +109,7 @@ section h2 {
     font-size: 26px;
 }
 
-/* Project Cards */
+/* Projects */
 .project-card {
     background: #1e293b;
     padding: 20px;
