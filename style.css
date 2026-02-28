@@ -218,3 +218,44 @@ section {
     animation: fadeUp 1s ease forwards;
 }
 
+/* ============================= */
+/* Hamburger Menu Styling */
+/* ============================= */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(30, 41, 59, 0.95);
+        width: 200px;
+        flex-direction: column;
+        display: none;
+        padding: 20px;
+        border-radius: 8px 0 0 8px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        position: relative;
+    }
+}
