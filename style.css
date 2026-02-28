@@ -232,24 +232,29 @@ section {
 @media (max-width: 768px) {
 
     nav {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: rgba(30, 41, 59, 0.95);
-        width: 200px;
-        flex-direction: column;
-        display: none;
-        padding: 20px;
-        border-radius: 8px 0 0 8px;
-    }
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(30, 41, 59, 0.95);
+    width: 200px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
 
-    nav a {
-        margin: 10px 0;
-    }
+nav a {
+    margin: 10px 0;
+}
 
-    nav.active {
-        display: flex;
-    }
+nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
 
     .menu-toggle {
         display: block;
@@ -259,3 +264,4 @@ section {
         position: relative;
     }
 }
+
