@@ -21,13 +21,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: rgba(30, 41, 59, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: #1e293b;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header h1 {
@@ -46,7 +43,7 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -82,15 +79,14 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.primary:hover {
-    background: #0ea5e9;
-    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
-}
-
-.secondary:hover {
+.primary {
     background: #38bdf8;
     color: #000;
-    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+.secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
 }
 
 .primary:hover {
@@ -109,39 +105,22 @@ section {
 }
 
 section h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 26px;
 }
 
-/* ========================= */
-/* Projects Grid Layout */
-/* ========================= */
-
-#projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 60px 40px;
-    justify-items: center;
-}
-
+/* Project Cards */
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 25px;
-    width: 100%;
-    max-width: 350px;
-    border-radius: 16px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    opacity: 0;
-    animation: fadeUp 1s ease forwards;
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25);
+    transform: translateY(-5px);
 }
 
 .project-card a {
@@ -173,14 +152,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Desktop 3 Column Layout */
-@media (min-width: 992px) {
-    #projects {
-        grid-template-columns: repeat(3, 1fr);
-        align-items: start;
-    }
-}
-
 /* Responsive */
 @media (max-width: 768px) {
 
@@ -194,99 +165,14 @@ footer {
     }
 
     nav a {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0%;
-    height: 2px;
-    background: #38bdf8;
-    transition: width 0.3s ease;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
+        margin: 0 10px;
+    }
 
     .hero h2 {
         font-size: 22px;
     }
-}
 
-/* Fade-in Animation */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .project-card {
+        width: 90%;
     }
 }
-
-section {
-    animation: fadeUp 1s ease forwards;
-}
-
-/* ============================= */
-/* Hamburger Menu Styling */
-/* ============================= */
-
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-
-    nav {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: rgba(30, 41, 59, 0.95);
-    width: 200px;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 8px 0 0 8px;
-    transform: translateY(-20px);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-nav a {
-    margin: 10px 0;
-}
-
-nav.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-}
-
-    .menu-toggle {
-        display: block;
-    }
-
-    header {
-        position: relative;
-    }
-}
-
-
